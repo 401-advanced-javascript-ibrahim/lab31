@@ -1,0 +1,47 @@
+{
+  "name": "lab31",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test",
+    "start": "react-scripts start",
+    "build": "react-scripts buid",
+    "lint": "eslint '**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/401-advanced-javascript-ibrahim/lab31.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/401-advanced-javascript-ibrahim/lab31/issues"
+  },
+  "homepage": "https://github.com/401-advanced-javascript-ibrahim/lab31",
+  "dependencies": {
+    "node-sass": "^4.13.1",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-jsonschema-form": "^1.8.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "^3.4.0",
+    "uuid": "^7.0.2"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/uuid": "^7.0.0"
+  }
+}
