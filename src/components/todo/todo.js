@@ -65,8 +65,8 @@ function ToDo (props) {
 
       <section className="todo">
 
-        <div>
-          <h3>Add Item</h3>
+        <div className="todo-form">
+          <h2>Add Item</h2>
           <form onSubmit={addItem}>
             <label>
               <span>To Do Item</span>
@@ -92,7 +92,7 @@ function ToDo (props) {
           </form>
         </div>
 
-        <div>
+        <div className="todo-list">
           <h2>
             There are
             <span>

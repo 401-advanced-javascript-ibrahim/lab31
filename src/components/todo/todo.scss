@@ -1,12 +1,15 @@
 body,
 html {
-  height: 100%;
+  background-color: rgb(153, 136, 114);
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
 header {
+  color: rgb(24, 43, 47);
+  font-family: "ZCOOL XiaoWei", serif;
+  font-size: x-large;
   text-align: center;
 }
 
@@ -36,10 +39,18 @@ section {
   border: solid;
   display: flex;
   flex-direction: row;
+  height: 430px;
   justify-content: space-evenly;
   margin: 2em;
+  padding-bottom: 2em;
+
+  h2 {
+    color: rgb(32, 93, 32);
+    font-family: "Righteous", cursive;
+  }
 
   form {
+    color: rgb(33, 49, 4);
     display: flex;
     flex-direction: column;
     margin-right: 2em;
@@ -47,29 +58,49 @@ section {
     label {
       display: flex;
       font-size: 23px;
+      font-family: "Righteous", cursive;
       flex-direction: column;
       margin-bottom: 1em;
     }
 
     input {
       font-size: 23px;
+
+      &:focus {
+        background-color: darkseagreen;
+      }
     }
 
-    button{
+    button {
       font-size: 23px;
       cursor: pointer;
-      &:hover{
+      &:hover {
         background-color: aqua;
       }
     }
   }
+
   h2 span {
     margin: 0 6px;
   }
+
+  .todo-list {
+    height: 90%;
+    margin-left: 10%;
+    width: 40%;
+  }
+
+  .todo-form {
+    margin-left: 10%;
+  }
+
   ul {
+    // border: solid;
+    height: inherit;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    overflow: auto;
 
     li {
       align-items: center;
