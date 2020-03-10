@@ -1,13 +1,13 @@
-# LAB - Class 31
+# LAB - Class 32
 
-## Project Name
+## Custom Hooks
 
-### Author: Student/Group Name
+### Author: Ibrahim
 
 ### Links and Resources
 
-- [submission PR](https://github.com/401-advanced-javascript-ibrahim/lab31)
-- [ci/cd](http://xyz.com) (GitHub Actions)
+- [submission PR](https://github.com/401-advanced-javascript-ibrahim/lab31/pulls)
+- [ci/cd](https://github.com/401-advanced-javascript-ibrahim/lab31/actions) (GitHub Actions)
 
 ### Setup
 
