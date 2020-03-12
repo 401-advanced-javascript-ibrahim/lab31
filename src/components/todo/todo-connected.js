@@ -2,6 +2,7 @@
 /* eslint-disable no-undefined */
 
 import React,{useState, useEffect} from 'react';
+import useFetch from '../hooks/useFetch';
 import { When } from '../if';
 import Modal from '../modal';
 
@@ -14,6 +15,7 @@ function ToDo (props) {
   const[item, setItem] = useState({});
   const[showDetails, setShowDetails] = useState(false);
   const[details, setDetails] = useState({});
+  useFetch(todoAPI, {}, setTodoList);
 
 
   const handleInputChange = e => {
@@ -78,14 +80,14 @@ function ToDo (props) {
     setDetails(todoList.filter( item => item._id === id )[0] || {});
   };
 
-  const getTodoItems = () => {
-    const _updateState = data => setTodoList(data.results);
-    callAPI( todoAPI, 'GET', undefined, _updateState );
-  };
+  // const getTodoItems = () => {
+  //   const _updateState = data => setTodoList(data.results);
+  //   callAPI( todoAPI, 'GET', undefined, _updateState );
+  // };
 
-  useEffect (() => {
-    getTodoItems();
-  },getTodoItems);
+  // useEffect (() => {
+  //   getTodoItems();
+  // },getTodoItems);
   return (
     <>
       <header>
