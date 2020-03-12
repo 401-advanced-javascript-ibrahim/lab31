@@ -4,6 +4,7 @@ import React,{useState, useEffect} from 'react';
 import uuid from 'uuid/v4';
 import { When } from '../if';
 import Modal from '../modal';
+import Header from '../header/index.js';
 
 import './todo.scss';
 
@@ -60,7 +61,7 @@ function ToDo (props) {
   return (
     <>
       <header>
-        <h1>To Do App</h1>
+        <Header />
       </header>
 
       <section className="todo">
